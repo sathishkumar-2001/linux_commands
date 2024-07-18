@@ -1,0 +1,113 @@
+File and Directory Operations
+xargs: Build and Execute Command Lines from Standard Input
+find . -name "*.txt" | xargs rm
+
+tar: Archive Files
+tar -cvf archive.tar directory  # create a tar archive
+tar -xvf archive.tar  # extract a tar archive
+tar -czvf archive.tar.gz directory  # create a compressed tar archive
+tar -xzvf archive.tar.gz  # extract a compressed tar archive
+
+zip/unzip: Compress and Decompress Files
+zip archive.zip file1 file2
+unzip archive.zip
+
+System Monitoring and Management
+uptime: Tell How Long the System Has Been Running
+uptime
+
+who: Show Who Is Logged On
+who
+
+watch: Execute a Program Periodically, Showing Output Full Screen
+watch -n 5 df -h  # run df -h every 5 seconds
+
+sar: Collect, Report, or Save System Activity Information
+sar -u 1 3  # CPU usage for 3 intervals of 1 second
+
+Disk Usage and Partitioning
+parted: A Partition Manipulation Program
+sudo parted /dev/sda
+
+lsblk: List Information About Block Devices
+lsblk
+
+blkid: Locate/Print Block Device Attributes
+sudo blkid
+
+Networking
+traceroute: Print the Route Packets Take to Network Host
+traceroute google.com
+nc (netcat): Network Utility for Reading and Writing Across Network Connections
+nc -zv host port  # check if port is open
+nc -l -p 1234  # listen on port 1234
+dig: DNS Lookup
+dig example.com
+dig +short example.com  # get just the IP address
+ip: Show/Manipulate Routing, Devices, Policy Routing and Tunnels
+ip a  # show all addresses
+ip link  # show network interfaces
+ip route  # show routing table
+
+User and Group Management
+passwd: Update User's Password
+passwd username
+last: Show a List of Last Logged in Users
+last
+lastlog: Reports the Most Recent Login of All Users or of a Given User
+lastlog
+
+Package Management (For RedHat-based Systems)
+yum: Package Manager
+sudo yum update  # update packages
+sudo yum install package_name  # install a package
+sudo yum remove package_name  # remove a package
+rpm: RPM Package Manager
+rpm -qa  # list all installed packages
+rpm -ivh package.rpm  # install a package
+rpm -e package_name  # remove a package
+
+Development and Debugging
+strace: Trace System Calls and Signals
+strace -p PID  # trace a running process
+strace command  # trace a command
+gdb: GNU Debugger
+gdb program
+ltrace: Track Library Calls
+ltrace command
+
+Scripting and Automation
+cron: Schedule Jobs to Run Periodically
+crontab -e  # edit cron jobs
+at: Schedule Commands to Be Executed Once
+at 14:00
+anacron: Run Commands Periodically with a Frequency Specified in Days
+sudo anacron -s
+
+Text Processing
+sort: Sort Lines of Text Files
+sort filename
+sort -r filename  # reverse sort
+uniq: Report or Omit Repeated Lines
+sort filename | uniq  # remove duplicates
+tr: Translate or Delete Characters
+tr 'a-z' 'A-Z' < filename  # convert to uppercase
+tr -d '[:space:]' < filename  # remove spaces
+cut: Remove Sections from Each Line of Files
+cut -d',' -f1 filename  # cut the first field from CSV
+
+File Comparison
+diff: Compare Files Line by Line
+diff file1 file2
+cmp: Compare Two Files Byte by Byte
+cmp file1 file2
+comm: Compare Two Sorted Files Line by Line
+comm file1 file2
+
+Backup and Restore
+dd: Convert and Copy a File
+dd if=/dev/sda of=/dev/sdb  # clone a disk
+dd if=/path/to/file.iso of=/dev/sdX  # create a bootable USB
+rsnapshot: File System Snapshot Utility
+sudo rsnapshot configtest
+sudo rsnapshot daily
