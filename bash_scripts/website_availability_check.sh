@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#before executing this script check whether mailutils is installed ,
 # Variables
 WEBSITE="http://example.com"
 EMAIL="admin@example.com"
