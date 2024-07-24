@@ -2,7 +2,7 @@
 
 # Variables
 REMOTE_USER="remoteuser"
-REMOTE_HOST="remote.host.com" 
+REMOTE_HOST="remote.host.com"  # or provide the ip address
 REMOTE_DIR="/path/to/remote/dir"
 LOCAL_DIR="/path/to/local/dir"
 
