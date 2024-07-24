@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Variables
 SOURCE_DIR="/path/to/source"
 BACKUP_DIR="/path/to/backup"
