@@ -113,3 +113,4 @@ dd if=/path/to/file.iso of=/dev/sdX  # create a bootable USB
 rsnapshot: File System Snapshot Utility
 sudo rsnapshot configtest
 sudo rsnapshot daily
+
