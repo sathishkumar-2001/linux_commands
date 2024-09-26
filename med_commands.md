@@ -92,6 +92,12 @@ sudo apt-get upgrade  # upgrade all packages
 sudo apt-get install package_name  # install a package
 sudo apt-get remove package_name  # remove a package
 
+chmod 
+777 - rwxrwxrwx
+755 - rwxr-xr-x
+700 - rwx------
+644 - rw-r--r--0
+
 Scripting
 cron: Schedule Jobs to Run Periodically
 crontab -e  # edit cron jobs
