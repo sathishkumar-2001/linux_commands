@@ -91,3 +91,8 @@ whoami
 
 history: Display Command History
 history
+
+package managers for each distribution
+ubuntu,debian - apt
+Fedora - dnf
+centos - yum
