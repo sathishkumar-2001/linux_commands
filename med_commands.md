@@ -106,7 +106,8 @@ crontab -l  # list cron jobs
 0 2 * * * /path/to/script.sh
 
 bash: Execute Shell Scripts
-
+bash - bourn again shell
+version - 4
 # Example script
 #!/bin/bash
 echo "Hello, World!"
